@@ -18,12 +18,10 @@ while (numeriCasuali.length < 5) {
 alert(numeriCasuali);
 
 // FACCIO INSERIRE I NUMERI ALL'UTENTE
-
 var numeriUtente = [];
-setTimeout(inserimento(numeriUtente, numeriCasuali), 30000);
-
-alert("sono stati inseriti " + numeriUtente.length + " numeri esatti");
-alert(numeriUtente);
+setTimeout(alert('inserisci 5 numeri da 1 a 50'), 6000);
+inserimento(numeriUtente, numeriCasuali);
+alert("sono stati inseriti " + numeriUtente.length + " numeri esatti: " + numeriUtente);
 
 
 // FUNZIONI

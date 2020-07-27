@@ -12,19 +12,31 @@ while (numeriCasuali.length < 5) {
     numero = random(1, 50);
     if (!numeriCasuali.includes(numero)) {
         numeriCasuali.push(numero);
-    } 
+    }
 }
 
-console.log(numeriCasuali);
+alert(numeriCasuali);
 
+// FACCIO INSERIRE I NUMERI ALL'UTENTE
 
+var numeriUtente = [];
+setTimeout(inserimento(numeriUtente, numeriCasuali), 30000);
 
-
-
+alert("sono stati inseriti " + numeriUtente.length + " numeri esatti");
+alert(numeriUtente);
 
 
 // FUNZIONI
 
 function random(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function inserimento(arrayVuoto, arrayPieno) {
+    for (i = 0; i < 5; i++) {
+        var numero = parseInt(prompt('inserisci un numero'));
+        if (arrayPieno.includes(numero)) {
+            arrayVuoto.push(numero);
+        }
+    }
 }

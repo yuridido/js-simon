@@ -16,10 +16,10 @@ while (numeriCasuali.length < 5) {
 }
 alert("memorizza questi numeri: " + numeriCasuali);
 
-// FACCIO INSERIRE I NUMERI ALL'UTENTE
+// FACCIO INSERIRE I NUMERI ALL'UTENTE E STAMPO IL RISULTATO
 var numeriUtente = [];
 setTimeout(function(){
-    inserimento(numeriUtente, numeriCasuali)
+    inserimento(numeriUtente, numeriCasuali);
     alert("sono stati inseriti " + numeriUtente.length + " numeri esatti: " + numeriUtente);
 }, 30000);
 

@@ -19,9 +19,10 @@ alert(numeriCasuali);
 
 // FACCIO INSERIRE I NUMERI ALL'UTENTE
 var numeriUtente = [];
-setTimeout(inserimento(numeriUtente, numeriCasuali), 6000);
-
-alert("sono stati inseriti " + numeriUtente.length + " numeri esatti: " + numeriUtente);
+setTimeout(function(){
+    inserimento(numeriUtente, numeriCasuali)
+    alert("sono stati inseriti " + numeriUtente.length + " numeri esatti: " + numeriUtente);
+}, 6000);
 
 
 // FUNZIONI
@@ -37,4 +38,8 @@ function inserimento(arrayVuoto, arrayPieno) {
             arrayVuoto.push(numero);
         }
     }
+}
+
+function messaggio() {
+    alert('prova delay');
 }

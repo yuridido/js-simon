@@ -14,15 +14,14 @@ while (numeriCasuali.length < 5) {
         numeriCasuali.push(numero);
     }
 }
-
-alert(numeriCasuali);
+alert("memorizza questi numeri: " + numeriCasuali);
 
 // FACCIO INSERIRE I NUMERI ALL'UTENTE
 var numeriUtente = [];
 setTimeout(function(){
     inserimento(numeriUtente, numeriCasuali)
     alert("sono stati inseriti " + numeriUtente.length + " numeri esatti: " + numeriUtente);
-}, 6000);
+}, 30000);
 
 
 // FUNZIONI
@@ -33,13 +32,9 @@ function random(min, max) {
 
 function inserimento(arrayVuoto, arrayPieno) {
     for (i = 0; i < 5; i++) {
-        var numero = parseInt(prompt('inserisci un numero'));
+        var numero = parseInt(prompt('inserisci uno dei numeri'));
         if (arrayPieno.includes(numero)) {
             arrayVuoto.push(numero);
         }
     }
-}
-
-function messaggio() {
-    alert('prova delay');
 }
